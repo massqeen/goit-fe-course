@@ -16,7 +16,7 @@ h2 {
 }
 
 .main-nav {
-  padding: 77px 0 96px 0;
+  padding: 76px 0 96px 0;
 }
 
 .site-navigation li {
@@ -40,22 +40,20 @@ h2 {
 }
 
 .site-navigation li:first-of-type {
-  margin: 0 118px 0 163px;
+  margin: 0 118px 0 162px;
 }
 
 .site-navigation li:nth-child(2) {
-  margin-right: 99px;
+  margin-right: 98px;
 }
 
 .site-navigation li:nth-child(3) {
-  margin-right: 91px;
+  margin-right: 90px;
 }
 
 .main-section {
   display: inline-block;
   width: 420px;
-  height: 477px;
-  overflow-y: hidden;
   margin-right: 56px;
   margin-bottom: 126px;
 }
@@ -72,7 +70,7 @@ h2 {
   color: #b4ad9e;
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
-  padding: 25px 0 22px 0;
+  padding: 24px 0 22px 0;
 }
 
 .main-section-heading {
@@ -86,11 +84,12 @@ h2 {
 }
 
 .main-button {
-  padding: 21px 34px;
+  padding: 18px 34px;
   border: 1px solid #626262;
   background-color: #fff;
   color: #626262;
   font-family: 'Playfair Display', Helvetica, sans-serif;
   font-size: 20px;
   line-height: 24px;
+  cursor: pointer;
 }
