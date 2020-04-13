@@ -62,7 +62,7 @@ h2 {
   margin-right: 0;
 }
 
-.main-section:nth-last-child(-n + 3) {
+.main-section:nth-last-of-type(-n + 2) {
   margin-bottom: 0;
 }
 
