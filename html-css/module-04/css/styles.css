@@ -1,0 +1,262 @@
+:root {
+  --accent-color: #1abc9c;
+  --text-color: #555252;
+  --background-color: #e9f0fd;
+}
+
+body {
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  background-color: #fff;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.clear-fix {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.main-header {
+  padding-top: 38px;
+  padding-bottom: 105px;
+}
+
+.logo {
+  float: left;
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: -0.6px;
+}
+
+.logo::first-letter {
+  font-weight: 900;
+  color: var(--accent-color);
+  letter-spacing: -0.6px;
+}
+
+.main-nav {
+  float: right;
+}
+
+.site-navigation {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 11px;
+  font-weight: 700;
+  color: #0f0101;
+  text-transform: uppercase;
+  letter-spacing: -0.96px;
+}
+
+.site-navigation > li {
+  float: left;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.site-navigation li:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-link:visited {
+  color: #0f0101;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  transition: 0.4s;
+  color: var(--accent-color);
+}
+
+.section h2 {
+  text-align: center;
+  color: #515151;
+  font-size: 48px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.section a {
+  text-decoration: none;
+}
+
+.section h2::after {
+  content: '';
+  background-color: var(--accent-color);
+  width: 164px;
+  height: 8px;
+  display: block;
+  margin: 32px 466px 130px;
+}
+
+.section-products {
+  padding-bottom: 105px;
+}
+
+.product-card {
+  width: 255px;
+  min-height: 322px;
+  background: var(--background-color);
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.product-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-card:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
+
+.product-card:hover .card-info-color {
+  transition: 0.4s;
+  background-color: var(--accent-color);
+}
+
+.link-info:focus .card-info-color {
+  background-color: var(--accent-color);
+}
+
+.link-img:focus + .link-info .card-info-color {
+  background-color: var(--accent-color);
+}
+
+.product-card-info {
+  width: 255px;
+}
+
+.product-image1 {
+  height: 276px;
+  background: url(../img/product1.png) center no-repeat;
+}
+
+.product-image2 {
+  height: 276px;
+  background: url(../img/product2.png) center no-repeat;
+}
+
+.product-image3 {
+  height: 276px;
+  background: url(../img/product3.png) center no-repeat;
+}
+
+.product-image4 {
+  height: 276px;
+  background: url(../img/product4.png) center no-repeat;
+}
+
+.product-image5 {
+  height: 276px;
+  background: url(../img/product5.png) center no-repeat;
+}
+
+.product-image6 {
+  height: 276px;
+  background: url(../img/product6.png) center no-repeat;
+}
+
+.product-image7 {
+  padding: 25px;
+  height: 276px;
+  background: url(../img/product7.png) center no-repeat;
+}
+
+.product-image8 {
+  height: 276px;
+  background: url(../img/product8.png) center no-repeat;
+}
+
+.card-text {
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card-info-color {
+  background-color: #323232;
+}
+
+.product-name {
+  padding: 7px 0 7px 14px;
+  padding-left: 14px;
+  float: left;
+}
+
+.product-price {
+  background-color: rgba(255, 255, 255, 0.44);
+  padding: 7px 12px;
+  float: right;
+}
+
+.section-news {
+  font-family: 'Open Sans', sans-serif;
+  padding-bottom: 80px;
+}
+
+.news-article {
+  width: 350px;
+  margin-right: 30px;
+  float: left;
+}
+
+.news-article:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.news-article-heading {
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.news-image {
+  margin-bottom: 10px;
+}
+
+.news-article h3:after {
+  content: '';
+  width: 136px;
+  height: 3px;
+  background-color: var(--accent-color);
+  display: block;
+  margin: 8px 0 22px 0;
+}
+
+.news-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: -0.28px;
+  margin-bottom: 10px;
+}
+
+.news-link {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  background-color: var(--accent-color);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: -0.32px;
+  color: #fff;
+  padding: 12px 40px;
+}
+
+/* font-family: 'Open Sans', sans-serif; для раздела новостей*/
