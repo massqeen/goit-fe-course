@@ -141,47 +141,6 @@ body {
   width: 255px;
 }
 
-.product-image1 {
-  height: 276px;
-  background: url(../img/product1.png) center no-repeat;
-}
-
-.product-image2 {
-  height: 276px;
-  background: url(../img/product2.png) center no-repeat;
-}
-
-.product-image3 {
-  height: 276px;
-  background: url(../img/product3.png) center no-repeat;
-}
-
-.product-image4 {
-  height: 276px;
-  background: url(../img/product4.png) center no-repeat;
-}
-
-.product-image5 {
-  height: 276px;
-  background: url(../img/product5.png) center no-repeat;
-}
-
-.product-image6 {
-  height: 276px;
-  background: url(../img/product6.png) center no-repeat;
-}
-
-.product-image7 {
-  padding: 25px;
-  height: 276px;
-  background: url(../img/product7.png) center no-repeat;
-}
-
-.product-image8 {
-  height: 276px;
-  background: url(../img/product8.png) center no-repeat;
-}
-
 .card-text {
   color: #fff;
   font-weight: 900;
