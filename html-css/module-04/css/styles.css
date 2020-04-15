@@ -25,7 +25,7 @@ body {
 
 .main-header {
   padding-top: 38px;
-  padding-bottom: 105px;
+  padding-bottom: 100px;
 }
 
 .logo {
@@ -53,7 +53,7 @@ body {
   font-weight: 700;
   color: #0f0101;
   text-transform: uppercase;
-  letter-spacing: -0.96px;
+  letter-spacing: -0.36px;
 }
 
 .site-navigation > li {
@@ -87,6 +87,7 @@ body {
   font-size: 48px;
   font-weight: 900;
   text-transform: uppercase;
+  letter-spacing: -0.02em;
 }
 
 .section a {
@@ -99,11 +100,11 @@ body {
   width: 164px;
   height: 8px;
   display: block;
-  margin: 32px 466px 130px;
+  margin: 32px 466px 98px;
 }
 
 .section-products {
-  padding-bottom: 105px;
+  padding-bottom: 100px;
 }
 
 .product-card {
@@ -221,6 +222,7 @@ body {
 .news-article-heading {
   font-weight: 600;
   line-height: 26px;
+  letter-spacing: -0.36px;
 }
 
 .news-image {
