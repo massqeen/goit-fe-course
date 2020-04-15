@@ -68,6 +68,7 @@ body {
 
 .nav-link {
   text-decoration: none;
+  color: #0f0101;
 }
 
 .nav-link:visited {
