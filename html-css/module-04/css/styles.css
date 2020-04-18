@@ -100,7 +100,7 @@ body {
   width: 164px;
   height: 8px;
   display: block;
-  margin: 32px 466px 98px;
+  margin: 32px auto 98px auto;
 }
 
 .section-products {
@@ -206,8 +206,6 @@ body {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  width: 160px;
-  height: 50px;
   border-radius: 3px;
   background-color: var(--accent-color);
   font-size: 16px;
@@ -217,5 +215,3 @@ body {
   color: #fff;
   padding: 12px 40px;
 }
-
-/* font-family: 'Open Sans', sans-serif; для раздела новостей*/
