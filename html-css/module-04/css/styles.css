@@ -6,7 +6,7 @@
 
 body {
   color: var(--text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   line-height: 32px;
   background-color: #fff;
@@ -18,7 +18,7 @@ body {
 }
 
 .clear-fix {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .site-navigation {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   line-height: 11px;
   font-weight: 700;
@@ -56,7 +56,7 @@ body {
   letter-spacing: -0.36px;
 }
 
-.site-navigation > li {
+.site-navigation>li {
   float: left;
   margin-top: 10px;
   margin-right: 30px;
@@ -77,7 +77,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  transition: 0.4s;
+  transition: 0.3s;
   color: var(--accent-color);
 }
 
@@ -95,7 +95,7 @@ body {
 }
 
 .section h2::after {
-  content: '';
+  content: "";
   background-color: var(--accent-color);
   width: 164px;
   height: 8px;
@@ -108,7 +108,7 @@ body {
 }
 
 .product-card {
-  width: 255px;
+  max-width: 254px;
   min-height: 322px;
   background: var(--background-color);
   float: left;
@@ -125,7 +125,7 @@ body {
 }
 
 .product-card:hover .card-info-color {
-  transition: 0.4s;
+  transition: 0.3s;
   background-color: var(--accent-color);
 }
 
@@ -133,7 +133,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.link-img:focus + .link-info .card-info-color {
+.link-img:focus+.link-info .card-info-color {
   background-color: var(--accent-color);
 }
 
@@ -144,13 +144,14 @@ body {
 }
 
 .card-info-color {
-  display: block;
   background-color: #323232;
+  min-width: 254px;
 }
 
 .product-name {
   padding: 7px 0 7px 14px;
   padding-left: 14px;
+  float: left;
 }
 
 .product-price {
@@ -160,12 +161,12 @@ body {
 }
 
 .section-news {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding-bottom: 80px;
 }
 
 .news-article {
-  width: 350px;
+  max-width: 348px;
   margin-right: 30px;
   float: left;
 }
@@ -185,7 +186,7 @@ body {
 }
 
 .news-article h3:after {
-  content: '';
+  content: "";
   width: 136px;
   height: 3px;
   background-color: var(--accent-color);
