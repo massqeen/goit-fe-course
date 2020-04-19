@@ -6,7 +6,7 @@
 
 body {
   color: var(--text-color);
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 32px;
   background-color: #fff;
@@ -18,7 +18,7 @@ body {
 }
 
 .clear-fix {
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -47,18 +47,18 @@ body {
 }
 
 .site-navigation {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 11px;
   font-weight: 700;
   color: #0f0101;
   text-transform: uppercase;
   letter-spacing: -0.36px;
+  padding-top: 10px;
 }
 
-.site-navigation>li {
+.site-navigation > li {
   float: left;
-  margin-top: 10px;
   margin-right: 30px;
 }
 
@@ -88,6 +88,7 @@ body {
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  line-height: normal;
 }
 
 .section a {
@@ -95,7 +96,7 @@ body {
 }
 
 .section h2::after {
-  content: "";
+  content: '';
   background-color: var(--accent-color);
   width: 164px;
   height: 8px;
@@ -129,11 +130,11 @@ body {
   background-color: var(--accent-color);
 }
 
-.link-info:focus .card-info-color {
+.link-img:focus + .card-info-color {
   background-color: var(--accent-color);
 }
 
-.link-img:focus+.link-info .card-info-color {
+.product-name-link:focus {
   background-color: var(--accent-color);
 }
 
@@ -148,10 +149,12 @@ body {
   min-width: 254px;
 }
 
-.product-name {
-  padding: 7px 0 7px 14px;
-  padding-left: 14px;
+.product-name-link {
   float: left;
+}
+
+.product-name {
+  padding: 7px 14px;
 }
 
 .product-price {
@@ -161,7 +164,7 @@ body {
 }
 
 .section-news {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   padding-bottom: 80px;
 }
 
@@ -186,7 +189,7 @@ body {
 }
 
 .news-article h3:after {
-  content: "";
+  content: '';
   width: 136px;
   height: 3px;
   background-color: var(--accent-color);
