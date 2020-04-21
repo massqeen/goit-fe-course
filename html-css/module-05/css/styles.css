@@ -94,11 +94,6 @@ body {
   transform: translateX(-50%);
 }
 
-.slides {
-  color: #000;
-  text-transform: uppercase;
-}
-
 .slides img {
   height: 600px;
   width: 100%;
@@ -118,6 +113,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-transform: uppercase;
 }
 
 .slides-description > h2 {
@@ -156,6 +152,7 @@ body {
 
 .slider-button:hover {
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 .slider-button > img {
@@ -197,7 +194,7 @@ body {
 }
 
 .product-card {
-  max-width: 254px;
+  max-width: 255px;
   min-height: 322px;
   background: var(--background-color);
   float: left;
@@ -213,9 +210,64 @@ body {
   margin-bottom: 0;
 }
 
+.link-img {
+  display: block;
+  position: relative;
+}
+
+.product-overlay {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: solid 10px #fff;
+  background-color: #000;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.overlay-buttons-list {
+  padding-left: 45px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.overlay-buttons-list-item {
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+.overlay-buttons-list-item:not(:last-of-type) {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.overlay-button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  background: transparent;
+  padding: 0;
+}
+
+.button-cart {
+  width: 166px;
+}
+
 .product-card:hover .card-info-color {
   transition: 0.3s;
   background-color: var(--accent-color);
+}
+
+.product-card:hover .product-overlay {
+  opacity: 0.55;
 }
 
 .link-img:focus + .card-info-color {
@@ -234,7 +286,7 @@ body {
 
 .card-info-color {
   background-color: #323232;
-  min-width: 254px;
+  min-width: 255px;
 }
 
 .product-name-link {
