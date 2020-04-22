@@ -117,7 +117,7 @@ body {
 }
 
 .slides-description > h2 {
-  font-family: 'Roboto Black';
+  font-family: 'Roboto Black', sans-serif;
   color: #fff;
   font-weight: 900;
   font-size: 60px;
@@ -127,7 +127,7 @@ body {
 
 .slides-description > p {
   color: #fff;
-  font-family: 'Roboto Light';
+  font-family: 'Roboto Light', sans-serif;
   font-weight: 300;
   letter-spacing: -0.48px;
   line-height: 54px;
@@ -150,7 +150,8 @@ body {
   right: 0;
 }
 
-.slider-button:hover {
+.slider-button:hover,
+.slider-button:focus {
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -162,7 +163,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
 }
 
 .section h2 {
@@ -287,7 +287,7 @@ body {
   margin: 0;
   text-transform: uppercase;
   color: #ffffff;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   line-height: 32px;
   padding-right: 18px;
@@ -299,7 +299,15 @@ body {
   opacity: 0.55;
 }
 
+.link-img:focus .product-overlay {
+  opacity: 0.55;
+}
+
 .product-card:hover .overlay-buttons-list {
+  opacity: 1;
+}
+
+.link-img:focus .overlay-buttons-list {
   opacity: 1;
 }
 
@@ -308,15 +316,10 @@ body {
   background-color: var(--accent-color);
 }
 
-.overlay-button:hover,
-.overlay-button:focus {
+.overlay-button:hover {
   background-color: var(--accent-color);
   border: solid 1px var(--accent-color);
   transition: 0.3s;
-}
-
-.link-img:focus + .card-info-color {
-  background-color: var(--accent-color);
 }
 
 .product-name-link:focus {
@@ -346,4 +349,20 @@ body {
   background-color: rgba(255, 255, 255, 0.44);
   padding: 7px 12px;
   float: right;
+}
+
+.footer {
+  background-color: #323232;
+  color: #fefefe;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  padding: 34px 0;
+  text-align: center;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #46bfa9;
 }
