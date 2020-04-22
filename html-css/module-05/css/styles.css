@@ -140,13 +140,18 @@ body {
   width: 104px;
   height: 104px;
   background-color: rgba(26, 188, 156, 0.65);
-  display: inline-block;
-  padding: 0;
+  background-repeat: no-repeat;
+  background-position: center;
   top: 50%;
   transform: translateY(-50%);
 }
 
+.slider-button-prev {
+  background-image: url(../img/icons/arrow-left.png);
+}
+
 .slider-button-next {
+  background-image: url(../img/icons/arrow-right.png);
   right: 0;
 }
 
@@ -210,8 +215,7 @@ body {
   margin-bottom: 0;
 }
 
-.link-img {
-  display: block;
+.image-container {
   position: relative;
 }
 
