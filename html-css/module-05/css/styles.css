@@ -303,17 +303,11 @@ body {
   opacity: 0.55;
 }
 
-.link-img:focus .product-overlay {
-  opacity: 0.55;
-}
 
 .product-card:hover .overlay-buttons-list {
   opacity: 1;
 }
 
-.link-img:focus .overlay-buttons-list {
-  opacity: 1;
-}
 
 .product-card:hover .card-info-color {
   transition: 0.3s;
