@@ -112,15 +112,18 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-transform: uppercase;
+  max-width: 740px;
 }
 
-.slides-description > h2 {
+.slides-description-heading {
   font-family: 'Roboto Black', sans-serif;
   color: #fff;
   font-weight: 900;
   font-size: 60px;
   letter-spacing: -1.2px;
   line-height: 82px;
+  max-height: 164px;
+  overflow: hidden;
 }
 
 .slides-description > p {
@@ -129,6 +132,8 @@ body {
   font-weight: 300;
   letter-spacing: -0.48px;
   line-height: 54px;
+  max-height: 162px;
+  overflow: hidden;
 }
 
 .slider-button {
@@ -140,6 +145,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 0;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .slider-button-prev {
@@ -231,7 +237,6 @@ body {
 }
 
 .overlay-buttons-list {
-  width: 166px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -339,6 +344,10 @@ body {
 
 .product-name {
   padding: 7px 14px;
+  max-width: 172px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .product-price {
