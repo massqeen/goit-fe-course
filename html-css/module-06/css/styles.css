@@ -109,7 +109,6 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .navigation {
@@ -247,9 +246,6 @@ body {
   max-width: 290px;
 }
 
-.team {
-}
-
 .team__container {
   padding: 0 0 78px 0;
 }
@@ -269,17 +265,20 @@ body {
   align-items: center;
 }
 
-.item-card:hover .overlay {
+.item-card:hover .overlay,
+.item-card:focus .overlay {
   opacity: 1;
   visibility: visible;
 }
 
-.item-card:hover .item-card__image-wrapper {
+.item-card:hover .item-card__image-wrapper,
+.item-card:focus .item-card__image-wrapper {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px var(--menu-color);
 }
 
-.item-card:hover .overlay__list-link {
+.item-card:hover .overlay__list-link,
+.item-card:focus .overlay__list-link {
   opacity: 1;
 }
 
@@ -337,19 +336,19 @@ body {
   background-color: var(--menu-color);
 }
 
-.overlay__list-link_facebook {
+.overlay__list-link-facebook {
   background-image: url(../images/team/facebook.png);
 }
 
-.overlay__list-link_twitter {
+.overlay__list-link-twitter {
   background-image: url(../images/team/twitter.png);
 }
 
-.overlay__list-link_pinterest {
+.overlay__list-link-pinterest {
   background-image: url(../images/team/pinterest.png);
 }
 
-.overlay__list-link_instagram {
+.overlay__list-link-instagram {
   background-image: url(../images/team/instagram.png);
 }
 
@@ -367,4 +366,60 @@ body {
   font-family: 'Roboto-LightItalic', sans-serif;
   font-size: 15px;
   line-height: 24px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.footer__text {
+  color: #333;
+}
+
+.footer__link {
+  color: var(--accent-color);
+}
+
+.footer__form {
+  display: flex;
+}
+
+.input__email {
+  width: 230px;
+  height: 42px;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+  border-radius: 0;
+  background-color: #ffffff;
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.input__email::placeholder {
+  font-family: 'Roboto-LightItalic', sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.input__email:focus::placeholder {
+  text-indent: 500px;
+  transition: text-indent 300ms ease-in-out;
+}
+
+.input__submit {
+  padding: 0 32px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  background-color: var(--menu-color);
+  color: #ffffff;
+  font-family: 'Montserrat-Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
