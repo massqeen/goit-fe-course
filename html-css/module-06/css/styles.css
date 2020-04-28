@@ -142,7 +142,6 @@ body {
 }
 
 .navigation__list-link {
-  padding: 10px 0 0 0;
   border-bottom: 0px solid var(--accent-color);
   transition: border-bottom 200ms linear, color 200ms linear,
     padding 200ms linear;
@@ -152,7 +151,7 @@ body {
 .navigation__list-link:focus {
   border-bottom: 3px solid var(--accent-color);
   color: var(--accent-color);
-  padding: 10px 0;
+  padding: 0 0 10px 0;
 }
 
 .services__container {
@@ -414,6 +413,8 @@ body {
   font-family: 'Montserrat-Regular', sans-serif;
   font-size: 14px;
   line-height: 1.2;
+  outline: none;
+  padding-left: 12px;
 }
 
 .input__email::placeholder {
