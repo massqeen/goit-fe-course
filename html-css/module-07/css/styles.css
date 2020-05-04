@@ -115,7 +115,7 @@ body {
 }
 
 .title {
-  font-family: 'Montserrat-Bold';
+  font-family: 'Montserrat';
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: -0.1rem;
@@ -217,7 +217,7 @@ body {
   padding-left: 2rem;
   border-radius: 3px;
   font-weight: 700;
-  outline: 2px transparent;
+  outline-color: transparent;
 }
 
 .contact-form__input:last-child {
@@ -230,7 +230,7 @@ body {
   resize: none;
   padding: 1.6rem 2rem 0 2rem;
   margin-bottom: 0;
-  outline: 2px transparent;
+  outline-color: transparent;
 }
 
 .contact-form__input::placeholder,
@@ -244,13 +244,13 @@ body {
 .contact-form__name:invalid:not(:placeholder-shown),
 .contact-form__email:invalid:not(:placeholder-shown),
 .contact-form__message:invalid:not(:placeholder-shown) {
-  outline: 2px solid #ff0000;
+  outline-color: #ff0000;
 }
 
 .contact-form__name:valid:not(:placeholder-shown),
 .contact-form__email:valid:not(:placeholder-shown),
 .contact-form__message:valid:not(:placeholder-shown) {
-  outline: 2px solid #00ff00;
+  outline-color: #00ff00;
 }
 
 .contact-form__submit {
