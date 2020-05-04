@@ -262,7 +262,7 @@ body {
 }
 
 /*  Small devices (landscape phones, less than 768px) */
-@media (max-width: 76.8em) {
+@media (max-width: 767.98px) {
   .navigation__list-item:not(:last-of-type) {
     margin-right: 2rem;
   }
@@ -283,7 +283,7 @@ body {
 }
 
 /*  small devices (portrait phones, less than 576px) */
-@media (max-width: 57.6em) {
+@media (max-width: 575.98px) {
   .navigation {
     flex-direction: column;
   }
@@ -335,7 +335,7 @@ body {
 }
 
 /*  Extra small devices (portrait phones, less than 423px) */
-@media (max-width: 42.3em) {
+@media (max-width: 422.98px) {
   .navigation__list-item {
     width: 33%;
   }
