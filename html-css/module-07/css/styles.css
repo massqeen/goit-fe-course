@@ -153,7 +153,7 @@ body {
   margin: 0 auto;
   width: 6.8rem;
   height: 6.8rem;
-  border: 0.3rem solid var(--accent-color);
+  border: 3px solid var(--accent-color);
   border-radius: 50%;
   margin-bottom: 2.6rem;
 }
@@ -179,13 +179,13 @@ body {
 
 .item-about__text {
   font-family: 'Roboto Slab', serif;
-  letter-spacing: -0.15px;
+  letter-spacing: -0.015rem;
   line-height: 1.6;
 }
 
 .contact {
-  background: #222 url(../images/Map_Image.png) no-repeat right 100px top 80px /
-    600px;
+  background: #222 url(../images/Map_Image.png) no-repeat right 10rem top 8rem /
+    60rem;
 }
 
 .contact-form {
@@ -236,7 +236,7 @@ body {
   color: #bbb;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: -0.35px;
+  letter-spacing: -0.035rem;
 }
 
 .contact-form__input:invalid,
@@ -257,12 +257,12 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   padding: 2.2rem 4.6rem;
-  border-radius: 0.3rem;
+  border-radius: 3px;
   cursor: pointer;
 }
 
 /*  Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 76.8em) {
   .navigation__list-item:not(:last-of-type) {
     margin-right: 2rem;
   }
@@ -277,13 +277,13 @@ body {
   }
 
   .contact {
-    background: #222 url(../images/Map_Image.png) no-repeat right 20px top 120px /
-      520px;
+    background: #222 url(../images/Map_Image.png) no-repeat right 2rem top 12rem /
+      52rem;
   }
 }
 
 /*  small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 57.6em) {
   .navigation {
     flex-direction: column;
   }
@@ -301,8 +301,8 @@ body {
   }
 
   .contact {
-    background: #222 url(../images/Map_Image.png) no-repeat right 20px top 120px /
-      380px;
+    background: #222 url(../images/Map_Image.png) no-repeat right 2rem top 12rem /
+      38rem;
   }
 
   .contact-form__wrapper {
@@ -329,13 +329,13 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     padding: 2rem;
-    border-radius: 0.3rem;
+    border-radius: 3px;
     cursor: pointer;
   }
 }
 
 /*  Extra small devices (portrait phones, less than 423px) */
-@media (max-width: 422.98px) {
+@media (max-width: 42.3em) {
   .navigation__list-item {
     width: 33%;
   }
@@ -353,7 +353,7 @@ body {
   }
 
   .contact {
-    background: #222 url(../images/Map_Image.png) no-repeat right 20px top 120px /
-      300px;
+    background: #222 url(../images/Map_Image.png) no-repeat right 2rem top 12rem /
+      30rem;
   }
 }
