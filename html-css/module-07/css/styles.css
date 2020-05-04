@@ -217,6 +217,7 @@ body {
   padding-left: 2rem;
   border-radius: 3px;
   font-weight: 700;
+  outline: 2px transparent;
 }
 
 .contact-form__input:last-child {
@@ -227,8 +228,9 @@ body {
   width: 50%;
   height: 21rem;
   resize: none;
-  padding: 1.6rem 0 0 2rem;
+  padding: 1.6rem 2rem 0 2rem;
   margin-bottom: 0;
+  outline: 2px transparent;
 }
 
 .contact-form__input::placeholder,
@@ -239,14 +241,16 @@ body {
   letter-spacing: -0.035rem;
 }
 
-.contact-form__input:invalid,
-.contact-form__message:invalid {
-  outline-color: #ff0000;
+.contact-form__name:invalid:not(:placeholder-shown),
+.contact-form__email:invalid:not(:placeholder-shown),
+.contact-form__message:invalid:not(:placeholder-shown) {
+  outline: 2px solid #ff0000;
 }
 
-.contact-form__input:valid,
-.contact-form__message:valid {
-  outline-color: #00ff00;
+.contact-form__name:valid:not(:placeholder-shown),
+.contact-form__email:valid:not(:placeholder-shown),
+.contact-form__message:valid:not(:placeholder-shown) {
+  outline: 2px solid #00ff00;
 }
 
 .contact-form__submit {
