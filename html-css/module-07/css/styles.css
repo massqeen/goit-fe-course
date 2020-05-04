@@ -297,7 +297,7 @@ body {
   }
 
   .navigation__list-item:not(:last-of-type) {
-    margin-right: 1.5rem;
+    margin-right: 1.1rem;
   }
 
   .title {
@@ -338,8 +338,8 @@ body {
   }
 }
 
-/*  Extra small devices (portrait phones, less than 423px) */
-@media (max-width: 422.98px) {
+/*  Extra small devices (portrait phones, less than 441px) */
+@media (max-width: 440.98px) {
   .navigation__list-item {
     width: 33%;
   }
