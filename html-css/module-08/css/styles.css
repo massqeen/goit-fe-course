@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat.woff') format('woff'),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('../fonts/Montserrat.woff2') format('woff2');
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/montserratbold.woff') format('woff'),
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('../fonts/montserratbold.woff2') format('woff2');
+  /* Chrome 26+, Opera 23+, Firefox 39+ */
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto300.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */ url('../fonts/roboto300.woff')
+      format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  font-style: normal;
+  font-weight: 300;
+}
+
+:root {
+  --accent-color: #ff4e50;
+  --text-color: #666;
+  --title-color: #333;
+  --font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: #fff;
+}
+
+.container {
+  max-width: 32rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
