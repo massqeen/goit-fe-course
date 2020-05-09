@@ -15,55 +15,97 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <nav class="navigation">
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a href="#" class="navigation__list-link">Home</a>
-            </li>
-            <li class="navigation__list-item">
-              <a href="#services" class="navigation__list-link">Services</a>
-            </li>
-          </ul>
+          <div class="navigation__auth-buttons">
+            <button type="button" class="navigation__button login">
+              Log in
+            </button>
+            <button type="button" class="navigation__button signup">
+              Sign up
+            </button>
+          </div>
+          <a href="#" lang="de" class="logo logo__link">URLAUBSGLÜCK</a>
         </nav>
+        <h1 class="heading">Share your holiday dreams</h1>
+        <p class="header__text">And find the perfect partner to fullfill it</p>
+        <a href="" class="button header__button">Find your holiday partner</a>
       </div>
     </header>
     <main>
-      <section class="section services">
-        <div class="container container__services">
-          <h2 id="services" class="title services__title">Services</h2>
-          <p class="subtitle services__subtitle">
-            Proin iaculis purus consequat sem cure.
-          </p>
-          <ul class="services__list">
-            <li class="item-about services__item-about">
-              <div class="item-about__icon item-about__icon-basket"></div>
-              <h3 class="item-about__title">E-Commerce</h3>
+      <section class="section partners">
+        <div class="container container__partners">
+          <h2 class="section__title partners__title">
+            Meet a partner for your best holiday
+          </h2>
+          <ul class="partners__list">
+            <li class="item-about partners__item-about partners__about-Hunter">
+              <div class="item-about__image-wrapper item-about__image-icon-tv">
+                <img
+                  src="./images/portrait1.jpg"
+                  alt="photo of Bradley Hunter"
+                  class="item-about__image"
+                  height="122px"
+                  width="122px"
+                />
+              </div>
+              <h3 class="item-about__title">Bradley Hunter</h3>
               <p class="item-about__text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
+                Based in Chicago. I love playing tennis and loud music.
               </p>
             </li>
-            <li class="item-about services__item-about">
-              <div class="item-about__icon item-about__icon-pc"></div>
-              <h3 class="item-about__title">Responsive Web</h3>
+            <li class="item-about partners__item-about">
+              <div
+                class="item-about__image-wrapper item-about__image-icon-bottle"
+              >
+                <img
+                  src="./images/portrait2.jpg"
+                  alt="photo of Lucas Marsha"
+                  class="item-about__image"
+                  height="122px"
+                  width="122px"
+                />
+              </div>
+              <h3 class="item-about__title">Lucas Marsha</h3>
               <p class="item-about__text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
+                I get my inspiration from nature and objects around me. I have a
+                passion to colours, typography and skateboards.
               </p>
             </li>
-            <li class="item-about services__item-about">
-              <div class="item-about__icon item-about__icon-lock"></div>
-              <h3 class="item-about__title">Web Security</h3>
+            <li class="item-about partners__item-about partners__about-Walker">
+              <div class="item-about__image-wrapper item-about__image-icon-cup">
+                <img
+                  src="./images/portrait3.jpg"
+                  alt="photo of Heather Walker"
+                  class="item-about__image"
+                  height="122px"
+                  width="122px"
+                />
+              </div>
+              <h3 class="item-about__title">Heather Walker</h3>
               <p class="item-about__text">
-                Proin iaculis purus consequat sem cure digni ssim. Donec
-                porttitora entum suscipit aenean rhoncus posuere odio in
-                tincidunt.
+                I'm a happy person that loves cats and climbing on mountains.
+              </p>
+            </li>
+            <li class="item-about partners__item-about">
+              <div
+                class="item-about__image-wrapper item-about__image-icon-plane"
+              >
+                <img
+                  src="./images/portrait4.jpg"
+                  alt="photo of Bradley Hunter"
+                  class="item-about__image"
+                  height="122px"
+                  width="122px"
+                />
+              </div>
+              <h3 class="item-about__title">Bradley Hunter</h3>
+              <p class="item-about__text">
+                Based in Chicago. I love playing tennis and loud music.
               </p>
             </li>
           </ul>
+          <a href="" class="button section__button">See other partners</a>
         </div>
       </section>
     </main>
