@@ -10,6 +10,16 @@
     margin: 0 auto;
   }
 
+  .heading {
+    margin: 0 auto 1.4rem auto;
+    max-width: 30rem;
+  }
+
+  .header__text {
+    display: block;
+    margin: 0 auto 3.2rem auto;
+  }
+
   .partners__about-Hunter {
     order: -1;
   }
@@ -54,12 +64,9 @@
   .heading {
     font-size: 5.2rem;
     max-width: 58rem;
-    margin: 0 auto 3.2rem auto;
   }
 
   .header__text {
-    display: block;
-    margin: 0 auto 3.2rem auto;
     font-size: 2.4rem;
     max-width: 58rem;
   }
