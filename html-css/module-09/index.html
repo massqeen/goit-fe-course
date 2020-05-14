@@ -22,17 +22,21 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <nav class="navigation row justify-content-center">
-              <div class="col-12 navigation__auth-buttons">
-                <button type="button" class="navigation__button login">
-                  Log in
-                </button>
-                <button type="button" class="navigation__button signup">
-                  Sign up
-                </button>
-              </div>
-              <div class="col-12 text-align-center">
-                <a href="#" lang="de" class="logo logo__link">URLAUBSGLÜCK</a>
+            <nav class="navigation">
+              <div
+                class="row flex-row-reverse justify-content-md-between align-items-center"
+              >
+                <div class="col-12 col-md-4 text-align-center navigation__auth">
+                  <button type="button" class="navigation__button login">
+                    Log in
+                  </button>
+                  <button type="button" class="navigation__button signup">
+                    Sign up
+                  </button>
+                </div>
+                <div class="col-12 col-md-4 text-align-center">
+                  <a href="#" lang="de" class="logo logo__link">URLAUBSGLÜCK</a>
+                </div>
               </div>
             </nav>
           </div>
@@ -44,89 +48,141 @@
               And find the perfect partner to fullfill it
             </p>
           </div>
-          <div class="col-12">
-            <a href="" class="button header__button"
-              >Find your holiday partner</a
-            >
+          <div class="col-12 mx-auto text-align-center">
+            <a href="#" class="button header__button">
+              Find your holiday partner
+            </a>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="section partners">
-        <div class="container container__partners">
-          <h2 class="section__title partners__title">
-            Meet a partner for your best holiday
-          </h2>
-          <ul class="partners__list">
-            <li class="item-about partners__item-about partners__about-hunter">
-              <div class="item-about__image-wrapper item-about__image-icon-tv">
-                <img
-                  src="./images/portrait1.jpg"
-                  alt="photo of Bradley Hunter"
-                  class="item-about__image"
-                  height="122px"
-                  width="122px"
-                />
-              </div>
-              <h3 class="item-about__title">Bradley Hunter</h3>
-              <p class="item-about__text">
-                Based in Chicago. I love playing tennis and loud music.
-              </p>
-            </li>
-            <li class="item-about partners__item-about">
+      <section class="section container">
+        <!-- Heading+Cards+Button -->
+        <div class="row text-align-center">
+          <!-- Heading -->
+          <div class="col-12">
+            <h2 class="section__title partners__title">
+              Meet a partner for your best holiday
+            </h2>
+          </div>
+          <!--/Heading -->
+          <!-- Cards+Button -->
+          <div class="row justify-content-center">
+            <!-- Cards -->
+            <div
+              class="row col-10 col-md-9 col-lg-12 justify-content-center"
+              style="border: 1px solid red;"
+            >
+              <!-- Card1 -->
               <div
-                class="item-about__image-wrapper item-about__image-icon-bottle"
+                class="col-12 col-sm-6 col-lg-3 order-sm-first order-md-first order-lg-first"
+                style="border: 1px solid green;"
               >
-                <img
-                  src="./images/portrait2.jpg"
-                  alt="photo of Lucas Marsha"
-                  class="item-about__image"
-                  height="122px"
-                  width="122px"
-                />
+                <div
+                  class="item-about partners__item-about partners__about-hunter"
+                >
+                  <div
+                    class="item-about__image-wrapper item-about__image-icon-tv"
+                  >
+                    <img
+                      src="./images/portrait1.jpg"
+                      alt="photo of Bradley Hunter"
+                      class="item-about__image"
+                      height="122px"
+                      width="122px"
+                    />
+                  </div>
+                  <h3 class="item-about__title">Bradley Hunter</h3>
+                  <p class="item-about__text">
+                    Based in Chicago. I love playing tennis and loud music.
+                  </p>
+                </div>
               </div>
-              <h3 class="item-about__title">Lucas Marsha</h3>
-              <p class="item-about__text">
-                I get my inspiration from nature and objects around me. I have a
-                passion to colours, typography and skateboards.
-              </p>
-            </li>
-            <li class="item-about partners__item-about partners__about-walker">
-              <div class="item-about__image-wrapper item-about__image-icon-cup">
-                <img
-                  src="./images/portrait3.jpg"
-                  alt="photo of Heather Walker"
-                  class="item-about__image"
-                  height="122px"
-                  width="122px"
-                />
+              <!-- /Card1 -->
+
+              <!-- Card2 -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="item-about partners__item-about">
+                  <div
+                    class="item-about__image-wrapper item-about__image-icon-bottle"
+                  >
+                    <img
+                      src="./images/portrait2.jpg"
+                      alt="photo of Lucas Marsha"
+                      class="item-about__image"
+                      height="122px"
+                      width="122px"
+                    />
+                  </div>
+                  <h3 class="item-about__title">Lucas Marsha</h3>
+                  <p class="item-about__text">
+                    I get my inspiration from nature and objects around me. I
+                    have a passion to colours, typography and skateboards.
+                  </p>
+                </div>
               </div>
-              <h3 class="item-about__title">Heather Walker</h3>
-              <p class="item-about__text">
-                I'm a happy person that loves cats and climbing on mountains.
-              </p>
-            </li>
-            <li class="item-about partners__item-about">
+
+              <!-- Card3 -->
               <div
-                class="item-about__image-wrapper item-about__image-icon-plane"
+                class="col-12 col-sm-6 col-lg-3 order-sm-first order-md-first order-lg-first"
               >
-                <img
-                  src="./images/portrait4.jpg"
-                  alt="photo of Bradley Hunter"
-                  class="item-about__image"
-                  height="122px"
-                  width="122px"
-                />
+                <div
+                  class="item-about partners__item-about partners__about-walker"
+                >
+                  <div
+                    class="item-about__image-wrapper item-about__image-icon-cup"
+                  >
+                    <img
+                      src="./images/portrait3.jpg"
+                      alt="photo of Heather Walker"
+                      class="item-about__image"
+                      height="122px"
+                      width="122px"
+                    />
+                  </div>
+                  <h3 class="item-about__title">Heather Walker</h3>
+                  <p class="item-about__text">
+                    I'm a happy person that loves cats and climbing on
+                    mountains.
+                  </p>
+                </div>
               </div>
-              <h3 class="item-about__title">Bradley Hunter</h3>
-              <p class="item-about__text">
-                Based in Chicago. I love playing tennis and loud music.
-              </p>
-            </li>
-          </ul>
-          <a href="" class="button section__button">See other partners</a>
+              <!-- /Card3 -->
+
+              <!-- Card4 -->
+              <div class="col-12 col-sm-6 col-lg-3">
+                <div class="item-about partners__item-about">
+                  <div
+                    class="item-about__image-wrapper item-about__image-icon-plane"
+                  >
+                    <img
+                      src="./images/portrait4.jpg"
+                      alt="photo of Bradley Hunter"
+                      class="item-about__image"
+                      height="122px"
+                      width="122px"
+                    />
+                  </div>
+                  <h3 class="item-about__title">Bradley Hunter</h3>
+                  <p class="item-about__text">
+                    Based in Chicago. I love playing tennis and loud music.
+                  </p>
+                </div>
+              </div>
+              <!-- /Card4 -->
+            </div>
+            <!-- /Cards -->
+
+            <!-- Button -->
+            <div class="col-12">
+              <a href="" class="button section__button">See other partners</a>
+            </div>
+            <!-- /Button -->
+          </div>
+          <!-- /Cards+Button -->
         </div>
+        <!--/Heading+Cards+Button -->
       </section>
     </main>
   </body>
