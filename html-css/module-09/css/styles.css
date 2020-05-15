@@ -186,7 +186,6 @@ body {
 }
 
 .section__button {
-  padding: 1rem 7.1rem;
   border: 2px solid var(--accent-color);
   color: var(--accent-color);
   background-color: #fff;
@@ -288,5 +287,25 @@ body {
         rgba(25, 24, 20, 0.2)
       ),
       url(../images/background.png);
+  }
+
+  .signup:hover {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+
+  .login:hover {
+    color: var(--accent-color);
+  }
+
+  .header__button:hover {
+    border: 2px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: #fff;
+  }
+
+  .section__button:hover {
+    color: #fff;
+    background-color: var(--accent-color);
   }
 }
