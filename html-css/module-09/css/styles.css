@@ -224,8 +224,8 @@ body {
   }
 }
 
-@media (max-width: 576px) {
-  .item-about__text {
+@media (max-width: 767px) {
+  .partners__item-about {
     margin-bottom: 2.6rem;
   }
 }
