@@ -195,3 +195,44 @@ body {
     color: $accent-color;
     border-color: $accent-color;
 }
+
+
+//! SECTION SERVICES
+
+.services {
+
+    // .services__container
+
+    &__container {}
+
+    // .services__title
+
+    &__title {}
+
+    // .services__title-line1
+
+    &__title-line1 {}
+
+    // .services__list
+
+    &__list {}
+}
+
+.container {}
+
+.title {}
+
+.title-line1 {}
+
+.services-wrapper {}
+
+.item-about {
+
+    // .item-about__title
+
+    &__title {}
+
+    // .item-about__text
+
+    &__text {}
+}
