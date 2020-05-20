@@ -43,8 +43,6 @@ body {
 }
 
 .header {
-
-
     color: #fff;
 
     & a {
@@ -65,10 +63,11 @@ body {
 .header__container {
     padding-top: 2.4rem;
     min-height: 100rem;
+    text-align: center;
 }
 
 .nav-wrapper {
-    margin-bottom: 19.6rem;
+    margin-bottom: 16.6rem;
 }
 
 .navigation {
@@ -76,32 +75,57 @@ body {
     justify-content: space-between;
     align-items: baseline;
 
-    // .navigation__list
-
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
         align-items: center;
-        min-width: 80%;
         text-transform: uppercase;
     }
 
+    &__list-item:not(:last-child) {
+        margin-right: 5.8rem;
+    }
 
-    // .navigation__list-item
+    &__list-link {
+        padding: 1.2rem 0;
+        transition: color 300ms ease-in-out;
+        position: relative;
+    }
 
-    &__list-item {}
+    &__list-link:hover,
+    &__list-link:focus {
+        color: $accent-color;
+    }
 
-    // .navigation__list-link
+    &__list-link::after {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0%;
+        height: 3px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $accent-color;
+        visibility: hidden;
+        transition: width 300ms ease-in-out, visibility 300ms ease-in-out;
+    }
 
-    &__list-link {}
+    &__list-link:hover::after {
+        width: 100%;
+        visibility: visible;
+    }
 }
 
 .logo {
     @include font($main-font, 3rem, 700);
-    // .logo__link
+    transition: color 300ms ease-in-out;
+}
 
-    &__link {}
+.logo:hover,
+.logo:focus {
+    color: $accent-color;
 }
 
 .nav-list-wrapper {
@@ -113,31 +137,61 @@ body {
 
 .navigation-buttons {
 
-    // .navigation-buttons__list
-
-    &__list {}
-
-    // .navigation-buttons__list-item
-
-    &__list-item {}
+    &__list {
+        max-width: 7.8rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .navigation-button {
     background-color: transparent;
-    display: block;
-    // .navigation-button__cart
+    cursor: pointer;
+    width: 1.8rem;
+    height: 1.8rem;
 
     & .nav-icon {
         width: 1.8rem;
         height: 1.8rem;
         fill: #fff;
+        display: block;
+        transition: fill 250ms ease-in-out;
     }
 
-    // .navigation-button__search
 
-    &__search {}
+    & .nav-icon:hover {
+        fill: $accent-color;
+    }
 }
 
-.main-heading {}
+.main-heading {
+    & span {
+        @include font($script-font, 7.2rem, 400);
+        display: block;
+        text-transform: capitalize;
+        margin-bottom: 3.7rem;
+    }
 
-.main-link {}
+    @include font($main-font, 15rem, 700);
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 80rem;
+    margin: 0 auto 9rem auto;
+    line-height: 1;
+}
+
+.main-link {
+    display: inline-block;
+    border: 3px solid #ffffff;
+    padding: 1rem 2.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 300ms ease-in-out, border-color 300ms ease-in-out;
+}
+
+.main-link:hover,
+.main-link:focus {
+    color: $accent-color;
+    border-color: $accent-color;
+}
