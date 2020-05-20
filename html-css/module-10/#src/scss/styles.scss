@@ -1,0 +1,67 @@
+@import '_fonts';
+@import '_minireset';
+
+$accent-color: #fce38a;
+$h-color: #333;
+$text-color: #999;
+$second-color: #95e1d3;
+$background-bottom: rgba(252, 227, 138, 0.9);
+$background-top: rgba(243, 129, 129, 0.9);
+
+@mixin gradient($direction, $top, $bottom) {
+    background-image: linear-gradient($direction, $top 0%, $bottom 100%)
+}
+
+//TODO: прописать свойства для body, дать переменную на основной шрифт
+
+.header {}
+
+.container {}
+
+.navigation {
+
+    // .navigation__list
+
+    &__list {}
+
+    // .navigation__list-item
+
+    &__list-item {}
+
+    // .navigation__list-link
+
+    &__list-link {}
+}
+
+.logo {
+
+    // .logo__link
+
+    &__link {}
+}
+
+.navigation-buttons {
+
+    // .navigation-buttons__list
+
+    &__list {}
+
+    // .navigation-buttons__list-item
+
+    &__list-item {}
+}
+
+.navigation-button {
+
+    // .navigation-button__cart
+
+    &__cart {}
+
+    // .navigation-button__search
+
+    &__search {}
+}
+
+.main-heading {}
+
+.main-link {}
