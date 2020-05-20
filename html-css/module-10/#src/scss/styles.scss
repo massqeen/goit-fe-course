@@ -1,6 +1,12 @@
 @import '_fonts';
 @import '_minireset';
 
+$main-font: 'Montserrat',
+sans-serif;
+$second-font: 'Roboto',
+sans-serif;
+$script-font: 'KaushanScript',
+sans-serif;
 $accent-color: #fce38a;
 $h-color: #333;
 $text-color: #999;
@@ -12,17 +18,75 @@ $background-top: rgba(243, 129, 129, 0.9);
     background-image: linear-gradient($direction, $top 0%, $bottom 100%)
 }
 
-//TODO: прописать свойства для body, дать переменную на основной шрифт
+@mixin font($fontfamily, $fontsize, $fontweight) {
+    font-family: $fontfamily;
+    font-size: $fontsize;
+    font-weight: $fontweight;
+}
 
-.header {}
+:root {
+    font-size: 62.5%;
+}
 
-.container {}
+body {
+    @include font($main-font, 1.4rem, 400);
+    color: $h-color;
+    line-height: 1.2;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 123rem;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.header {
+
+
+    color: #fff;
+
+    & a {
+        color: #fff;
+    }
+
+    background-image: url(../../images/bcg/background-min.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__overlay {
+    width: 100%;
+    height: 100%;
+    @include gradient(to bottom, $background-top, $background-bottom);
+}
+
+.header__container {
+    padding-top: 2.4rem;
+    min-height: 100rem;
+}
+
+.nav-wrapper {
+    margin-bottom: 19.6rem;
+}
 
 .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 
     // .navigation__list
 
-    &__list {}
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+        min-width: 80%;
+        text-transform: uppercase;
+    }
+
 
     // .navigation__list-item
 
@@ -34,10 +98,17 @@ $background-top: rgba(243, 129, 129, 0.9);
 }
 
 .logo {
-
+    @include font($main-font, 3rem, 700);
     // .logo__link
 
     &__link {}
+}
+
+.nav-list-wrapper {
+    max-width: 62rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .navigation-buttons {
@@ -55,7 +126,11 @@ $background-top: rgba(243, 129, 129, 0.9);
 
     // .navigation-button__cart
 
-    &__cart {}
+    & .nav-icon {
+        width: 1.8rem;
+        height: 1.8rem;
+        fill: #fff;
+    }
 
     // .navigation-button__search
 
