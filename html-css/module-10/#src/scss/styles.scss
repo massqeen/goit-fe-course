@@ -51,7 +51,7 @@ body {
         color: #fff;
     }
 
-    background-image: url(./images/bcg/background-min.jpg);
+    background-image: url(../images/bcg/background-min.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -123,7 +123,8 @@ body {
 }
 
 .navigation-button {
-
+    background-color: transparent;
+    display: block;
     // .navigation-button__cart
 
     & .nav-icon {
