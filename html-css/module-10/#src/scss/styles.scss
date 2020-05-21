@@ -28,7 +28,7 @@ $background-top: rgba(243, 129, 129, 0.9);
 %plain-text {
     @include font($second-font, 1.5rem, 400);
     color: $text-color;
-    line-height: 24px;
+    line-height: 1.6;
 }
 
 :root {
@@ -75,14 +75,6 @@ body {
 }
 
 @import '_services';
-
 @import '_team';
-
-.footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 5.4rem;
-    border-top: 1px solid #e5e5e5;
-}
+@import '_footer';
+@import '_media';

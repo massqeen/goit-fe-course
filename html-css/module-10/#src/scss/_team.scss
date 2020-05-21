@@ -1,26 +1,13 @@
 .team {
 
-    // .team__container
-
     &__container {
         padding-top: 4rem;
         padding-bottom: 8rem;
-
     }
-
-    // .team__title
-
-    &__title {}
 
     &__title::after {
         margin: 3.6rem auto 3.8rem auto;
     }
-
-    // .team__title-line1
-
-    &__title-line1 {}
-
-    // .team__text
 
     &__text {
         @extend %plain-text;
@@ -29,27 +16,15 @@
         margin: 0 auto 9rem auto;
     }
 
-
-    // .team__list
-
     &__list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(32rem, 38rem));
         gap: 6rem 2.3%;
         justify-content: center;
-        border: 1px solid green;
     }
 }
 
-.container {}
-
-.title {}
-
-.title-line1 {}
-
 .item-card {
-
-    // .item-card__image-wrapper
 
     &__image-wrapper {
         margin-bottom: 2.6rem;
@@ -59,20 +34,12 @@
             box-shadow 200ms linear;
     }
 
-    // .item-card__image
-
-    &__image {}
-
-    // .item-card__title
-
     &__title {
         text-transform: uppercase;
         display: block;
         text-align: center;
         margin-bottom: 0.8rem;
     }
-
-    // .item-card__text
 
     &__text {
         display: block;
@@ -93,7 +60,6 @@
     visibility: hidden;
     @include gradient(to bottom, $background-top, $background-bottom);
     transition: visibility 200ms linear, opacity 200ms linear;
-    // .overlay__list
 
     &__list {
         width: 100%;
@@ -103,53 +69,44 @@
         align-items: center;
     }
 
-    // .overlay__list-item
-
-    &__list-item {}
-
-    // .overlay__list-link
-
     &__list-link {
-        display: block;
-        width: 56px;
-        height: 56px;
+        width: 5.6rem;
+        height: 5.6rem;
         opacity: 0;
-        background-color: #fce38a;
-        background-position: center;
-        background-repeat: no-repeat;
-        transition: background-color 200ms linear,
-            opacity 200ms linear;
+        background: $accent-color center no-repeat;
+        transition: background-color 200ms linear, opacity 200ms linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    // .overlay__list-link-facebook
-
-    &__list-link-facebook {}
-
-    // .overlay__list-link-twitter
-
-    &__list-link-twitter {}
-
-    // .overlay__list-link-pinterest
-
-    &__list-link-pinterest {}
-
-    // .overlay__list-link-instagram
-
-    &__list-link-instagram {}
+    & .social-icon {
+        width: 2.6rem;
+        height: 2.6rem;
+        fill: $accent2-color;
+        display: block;
+        transition: fill 250ms ease-in-out;
+    }
 }
 
-.item-card:hover .overlay,
-.item-card:focus .overlay {
+.item-card:hover .overlay {
     opacity: 1;
     visibility: visible;
 }
 
-.item-card:hover .overlay__list-link,
-.item-card:focus .overlay__list-link {
+.item-card:hover .item-card__image-wrapper {
+    transform: translate(-1rem, -1rem);
+    box-shadow: 1rem 1rem $second-color;
+}
+
+.item-card:hover .overlay__list-link {
     opacity: 1;
 }
 
-.overlay__list-link:hover,
-.overlay__list-link:focus {
-    background-color: $second-color;
+.overlay__list-link:hover {
+    background-color: $accent2-color;
+}
+
+.overlay__list-link:hover .overlay__icon--hover {
+    fill: #fff;
 }

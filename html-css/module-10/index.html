@@ -21,19 +21,39 @@
               <div class="nav-list-wrapper">
                 <ul class="navigation__list">
                   <li class="navigation__list-item">
-                    <a href="#" class="navigation__list-link">about</a>
+                    <a
+                      href="#"
+                      class="navigation__list-link navigation__list-link--hover"
+                      >about</a
+                    >
                   </li>
                   <li class="navigation__list-item">
-                    <a href="#" class="navigation__list-link">service</a>
+                    <a
+                      href="#"
+                      class="navigation__list-link navigation__list-link--hover"
+                      >service</a
+                    >
                   </li>
                   <li class="navigation__list-item">
-                    <a href="#" class="navigation__list-link">work</a>
+                    <a
+                      href="#"
+                      class="navigation__list-link navigation__list-link--hover"
+                      >work</a
+                    >
                   </li>
                   <li class="navigation__list-item">
-                    <a href="#" class="navigation__list-link">blog</a>
+                    <a
+                      href="#"
+                      class="navigation__list-link navigation__list-link--hover"
+                      >blog</a
+                    >
                   </li>
                   <li class="navigation__list-item">
-                    <a href="#" class="navigation__list-link">contact</a>
+                    <a
+                      href="#"
+                      class="navigation__list-link navigation__list-link--hover"
+                      >contact</a
+                    >
                   </li>
                 </ul>
 
@@ -71,7 +91,9 @@
           <h1 class="main-heading">
             <span>Creative Template</span>Welcome to MoGo
           </h1>
-          <a href="#" class="main-link">Learn more</a>
+          <a href="#" class="main-link header-container__main-link--hover"
+            >Learn more</a
+          >
         </div>
       </div>
     </header>
@@ -144,40 +166,62 @@
           <ul class="team__list">
             <li class="item-card">
               <div class="item-card__image-wrapper">
-                <img
-                  src="./images/team/team1-min.jpg"
-                  alt="team-member photo"
-                  class="item-card__image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 48em)"
+                    srcset="./images/bcg/background@0.5x.jpg"
+                  />
+                  <source
+                    media="(device-pixel-ratio: 2)"
+                    srcset="./images/team/portrait1.jpg"
+                  />
+                  <img
+                    src="./images/team/team1-tablet.jpg"
+                    alt="team-member photo"
+                    class="item-card__image"
+                  />
+                </picture>
                 <div class="overlay">
                   <ul class="overlay__list">
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-facebook"
-                        ><span class="visually-hidden">Facebook link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Facebook link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-twitter"
-                        ><span class="visually-hidden">Twitter link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Twitter link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-pinterest"
-                        ><span class="visually-hidden">Pinterest link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Pinterest link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#pinterest"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-instagram"
-                        ><span class="visually-hidden">Instagram link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Instagram link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -187,40 +231,58 @@
             </li>
             <li class="item-card">
               <div class="item-card__image-wrapper">
-                <img
-                  src="./images/team/team2-min.jpg"
-                  alt="team-member photo"
-                  class="item-card__image"
-                />
+                <picture>
+                  <source
+                    srcset="./images/team/team2-min.jpg w768,
+                    ./images/team/team2@2x.jpg 1.5x"
+                  />
+                  <img
+                    src="./images/team/team2-tablet.jpg"
+                    alt="team-member photo"
+                    class="item-card__image"
+                  />
+                </picture>
                 <div class="overlay">
                   <ul class="overlay__list">
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-facebook"
-                        ><span class="visually-hidden">Facebook link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Facebook link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-twitter"
-                        ><span class="visually-hidden">Twitter link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Twitter link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-pinterest"
-                        ><span class="visually-hidden">Pinterest link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Pinterest link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#pinterest"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-instagram"
-                        ><span class="visually-hidden">Instagram link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Instagram link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -230,40 +292,58 @@
             </li>
             <li class="item-card">
               <div class="item-card__image-wrapper">
-                <img
-                  src="./images/team/team3-min.jpg"
-                  alt="team-member photo"
-                  class="item-card__image"
-                />
+                <picture>
+                  <source
+                    srcset="./images/team/team3-min.jpg w768,
+                    ./images/team/team3@2x.jpg 1.5x"
+                  />
+                  <img
+                    src="./images/team/team3-tablet.jpg"
+                    alt="team-member photo"
+                    class="item-card__image"
+                  />
+                </picture>
                 <div class="overlay">
                   <ul class="overlay__list">
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-facebook"
-                        ><span class="visually-hidden">Facebook link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Facebook link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#facebook"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-twitter"
-                        ><span class="visually-hidden">Twitter link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Twitter link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#twitter"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-pinterest"
-                        ><span class="visually-hidden">Pinterest link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Pinterest link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#pinterest"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                     <li class="overlay__list-item">
-                      <a
-                        href="#"
-                        class="overlay__list-link overlay__list-link-instagram"
-                        ><span class="visually-hidden">Instagram link</span></a
-                      >
+                      <a href="#" class="overlay__list-link">
+                        <span class="visually-hidden">Instagram link</span>
+                        <svg class="social-icon overlay__icon--hover">
+                          <use
+                            href="./images/icons/social/socials.svg#instagram"
+                          ></use>
+                        </svg>
+                      </a>
                     </li>
                   </ul>
                 </div>
