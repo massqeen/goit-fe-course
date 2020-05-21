@@ -8,6 +8,7 @@ sans-serif;
 $script-font: 'KaushanScript',
 sans-serif;
 $accent-color: #fce38a;
+$accent2-color: #f38181;
 $h-color: #333;
 $text-color: #999;
 $second-color: #95e1d3;
@@ -177,7 +178,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     max-width: 80rem;
-    margin: 0 auto 9rem auto;
+    margin: 0 auto 9.4rem auto;
     line-height: 1;
 }
 
@@ -200,39 +201,95 @@ body {
 //! SECTION SERVICES
 
 .services {
+    &__container {
+        padding: 4.6rem 2.2rem;
+    }
 
-    // .services__container
-
-    &__container {}
-
-    // .services__title
-
-    &__title {}
-
-    // .services__title-line1
-
-    &__title-line1 {}
-
-    // .services__list
-
-    &__list {}
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9.6rem 2rem;
+    }
 }
 
-.container {}
+.title {
+    color: $h-color;
+    @include font($main-font, 3rem, 700);
+    text-transform: uppercase;
+    text-align: center;
 
-.title {}
+    &::after {
+        content: '';
+        display: block;
+        margin: 3.4rem auto 6.3rem auto;
+        width: 6rem;
+        height: 0.3rem;
+        background-color: $accent2-color;
+    }
+}
 
-.title-line1 {}
+.title-line1 {
+    @include font($script-font, 2.4rem, 400);
+    text-transform: none;
+    display: block;
+    margin-bottom: 1.3rem;
+}
 
 .services-wrapper {}
 
+// TODO probably not needed
+
 .item-about {
+    position: relative;
+    padding-left: 8rem;
+
+    &:nth-child(n)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &:nth-child(1)::before {
+        background: url(/images/icons/services/alarm-min.svg) center no-repeat;
+    }
+
+    &:nth-child(2)::before {
+        background: url(/images/icons/services/graph-min.svg) center no-repeat;
+    }
+
+    &:nth-child(3)::before {
+        background: url(/images/icons/services/PC-min.svg) center no-repeat;
+    }
+
+    &:nth-child(4)::before {
+        background: url(/images/icons/services/book-min.svg) center no-repeat;
+    }
+
+    &:nth-child(5)::before {
+        background: url(/images/icons/services/home-min.svg) center no-repeat;
+    }
+
+    &:nth-child(6)::before {
+        background: url(/images/icons/services/image-min.svg) center no-repeat;
+    }
 
     // .item-about__title
 
-    &__title {}
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1.1rem;
+    }
 
     // .item-about__text
 
-    &__text {}
+    &__text {
+        @include font($second-font, 1.5rem, 400);
+        color: $text-color;
+        line-height: 24px;
+        max-width: 28rem;
+    }
 }

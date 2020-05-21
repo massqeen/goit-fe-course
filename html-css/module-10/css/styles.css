@@ -345,7 +345,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   max-width: 80rem;
-  margin: 0 auto 9rem auto;
+  margin: 0 auto 9.4rem auto;
   line-height: 1;
 }
 
@@ -373,4 +373,96 @@ body {
 .main-link:focus {
   color: #fce38a;
   border-color: #fce38a;
+}
+
+.services__container {
+  padding: 4.6rem 2.2rem;
+}
+
+.services__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 9.6rem 2rem;
+}
+
+.title {
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title::after {
+  content: '';
+  display: block;
+  margin: 3.4rem auto 6.3rem auto;
+  width: 6rem;
+  height: 0.3rem;
+  background-color: #f38181;
+}
+
+.title-line1 {
+  font-family: "KaushanScript", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 400;
+  text-transform: none;
+  display: block;
+  margin-bottom: 1.3rem;
+}
+
+.item-about {
+  position: relative;
+  padding-left: 8rem;
+}
+
+.item-about:nth-child(n)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 2rem;
+  display: block;
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.item-about:nth-child(1)::before {
+  background: url(/images/icons/services/alarm-min.svg) center no-repeat;
+}
+
+.item-about:nth-child(2)::before {
+  background: url(/images/icons/services/graph-min.svg) center no-repeat;
+}
+
+.item-about:nth-child(3)::before {
+  background: url(/images/icons/services/PC-min.svg) center no-repeat;
+}
+
+.item-about:nth-child(4)::before {
+  background: url(/images/icons/services/book-min.svg) center no-repeat;
+}
+
+.item-about:nth-child(5)::before {
+  background: url(/images/icons/services/home-min.svg) center no-repeat;
+}
+
+.item-about:nth-child(6)::before {
+  background: url(/images/icons/services/image-min.svg) center no-repeat;
+}
+
+.item-about__title {
+  text-transform: uppercase;
+  margin-bottom: 1.1rem;
+}
+
+.item-about__text {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #999;
+  line-height: 24px;
+  max-width: 28rem;
 }
