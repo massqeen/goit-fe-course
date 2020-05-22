@@ -18,6 +18,9 @@
           <div class="nav-wrapper">
             <nav class="navigation">
               <a href="#" class="logo">MoGo</a>
+              <div class="header__burger">
+                <span></span>
+              </div>
               <div class="nav-list-wrapper">
                 <ul class="navigation__list">
                   <li class="navigation__list-item">
@@ -29,7 +32,7 @@
                   </li>
                   <li class="navigation__list-item">
                     <a
-                      href="#"
+                      href="#service"
                       class="navigation__list-link navigation__list-link--hover"
                       >service</a
                     >
@@ -50,7 +53,7 @@
                   </li>
                   <li class="navigation__list-item">
                     <a
-                      href="#"
+                      href="#contact"
                       class="navigation__list-link navigation__list-link--hover"
                       >contact</a
                     >
@@ -98,7 +101,7 @@
       </div>
     </header>
     <main>
-      <section class="services">
+      <section class="services" id="service">
         <div class="container services__container">
           <h2 class="title services__title">
             <span class="title-line1 services__title-line1">We work with</span>
@@ -168,7 +171,7 @@
               <div class="item-card__image-wrapper">
                 <picture>
                   <source
-                    media="(min-width: 48em)"
+                    media="(min-width: 768px)"
                     srcset="
                       ./images/team/team1.jpg,
                       ./images/team/team1@2x.jpg 2x
@@ -359,9 +362,8 @@
           </ul>
         </div>
       </section>
-      <div class="test"></div>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="contact">
       <div class="container footer__container">
         <p class="footer__text">
           &copy; 2016 MoGo free PSD template by

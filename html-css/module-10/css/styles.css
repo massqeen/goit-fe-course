@@ -417,7 +417,7 @@ body {
 }
 
 .services__container {
-  padding: 4.6rem 2.2rem;
+  padding: 4.6rem 1.9rem;
 }
 
 .services__list {
@@ -667,7 +667,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 4.2rem;
 }
 
 .input__email:-ms-input-placeholder {
@@ -675,7 +675,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 4.2rem;
 }
 
 .input__email::-ms-input-placeholder {
@@ -683,7 +683,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 4.2rem;
 }
 
 .input__email::placeholder {
@@ -691,7 +691,7 @@ body {
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
-  line-height: 1.6;
+  line-height: 4.2rem;
 }
 
 .input__email:focus::-webkit-input-placeholder {
@@ -735,8 +735,50 @@ body {
   text-transform: uppercase;
 }
 
-@media (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-resolution: 192dpi) {
+@media (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-resolution: 192dpi) {
   .header {
     background-image: url(../images/bcg/background@2x.jpg);
+  }
+}
+
+@media (max-width: 61.94em) {
+  .container {
+    max-width: 96rem;
+    border: 1px solid red;
+  }
+  .nav-wrapper {
+    margin-bottom: 14rem;
+  }
+  .nav-list-wrapper {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    font-size: 1.6rem;
+  }
+  .navigation__list-item:not(:last-child) {
+    margin-right: 3rem;
+  }
+  .navigation__list-item:last-child {
+    margin-right: 3rem;
+  }
+  .navigation-buttons__list {
+    max-width: 6.8rem;
+  }
+  .main-heading {
+    font-size: 12rem;
+    max-width: 70rem;
+  }
+  .services__container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .services__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 8rem 2rem;
+  }
+  .team__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }

@@ -36,7 +36,7 @@
         &::placeholder {
             @include font($second-font, 1.5rem, 300);
             font-style: italic;
-            line-height: 1.6;
+            line-height: 4.2rem;
         }
 
         &:focus::placeholder {
