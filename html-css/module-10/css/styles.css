@@ -735,7 +735,7 @@ body {
   text-transform: uppercase;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+@media (min-width: 64em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2), (min-width: 75em) and (-o-min-device-pixel-ratio: 2/1), (min-width: 75em) and (min-resolution: 192dpi) {
   .header {
     background-image: url(../images/bcg/background@2x.jpg);
   }
