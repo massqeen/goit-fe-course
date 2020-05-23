@@ -18,8 +18,8 @@
 
     &__list {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(32rem, 38rem));
-        gap: 6rem 2.3%;
+        grid-template-columns: repeat(3, minmax(320px, 1fr));
+        column-gap: 2.3%;
         justify-content: center;
     }
 }
