@@ -1,7 +1,7 @@
 function burgerMenu() {
     let menu = document.querySelector(".nav-list-wrapper");
     let burger = document.querySelector(".nav__burger");
-    let links = document.querySelector(".navigation__list-link");
+    let links = document.querySelectorAll(".navigation__list-link");
 
 
     burger.addEventListener("click", (e) => {
@@ -10,6 +10,10 @@ function burgerMenu() {
     [].forEach.call(links, function (el) {
         el.addEventListener("click", () => toggleMenu());
     });
+    //another way of 'forEach':
+    // for (let link of links) {
+    //     link.addEventListener('click', () => toggleClass());
+    // }
 
 
     function toggleMenu() {
