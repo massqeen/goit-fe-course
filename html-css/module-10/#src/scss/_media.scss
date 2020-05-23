@@ -1,10 +1,29 @@
-@media (min-width: 75em) and (-webkit-min-device-pixel-ratio: 2),
-(min-width: 75em) and (min-resolution: 192dpi) {
+//small image background
+@media (min-width: 36em) {
+    .header {
+        background-image: url(../images/bcg/background@0.5x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+//usual image background
+@media (min-width: 48em) {
+    .header {
+        background-image: url(../images/bcg/background-min.jpg);
+    }
+}
+
+//retina header background
+@media (min-width: 62em) and (-webkit-min-device-pixel-ratio: 2),
+(min-width: 62em) and (min-resolution: 192dpi) {
     .header {
         background-image: url(../images/bcg/background@2x.jpg);
     }
 }
 
+//landscape tablets
 @media (max-width: 61.94em) {
     .container {
         max-width: 96rem;
@@ -52,16 +71,25 @@
     }
 }
 
+//small landscape devices and tablets
 @media (max-width: 47.94em) {
+
+    // .container {
+    //     width: 54rem;
+    // }
 
     .header__container {
         padding: 0;
     }
 
-    //TODO пробивает марджином фикс шапку, проверить, работает ли падинг для отступа
+    .header__container {
+        min-height: 60rem;
+    }
+
+    //пробивает марджином фикс шапку, изменен на падинг
     .nav-wrapper {
         margin-bottom: 0;
-        padding-bottom: 14rem;
+        padding-bottom: 12rem;
     }
 
 
@@ -188,5 +216,145 @@
     .navigation-button .nav-icon {
         width: 3rem;
         height: 3rem;
+    }
+
+    .main-heading {
+        max-width: 51rem;
+        font-size: 9rem;
+        margin-bottom: 7rem;
+
+        & .subtitle {
+            font-size: 6.2rem;
+        }
+    }
+
+    .title {
+        font-size: 3.4rem;
+    }
+
+    .title-line1 {
+        font-size: 2.8rem;
+    }
+
+    .services__list,
+    .team__text,
+    .item-card__title {
+        font-size: 1.6rem;
+    }
+
+    .item-card__text {
+        font-size: 1.7rem;
+    }
+
+    .services__list {
+        row-gap: 5rem;
+    }
+
+    .team__container {
+        padding-bottom: 6rem;
+    }
+
+    .team__text {
+        margin-bottom: 5rem;
+    }
+
+    .team__list {
+        display: block;
+        max-width: 32rem;
+        margin: 0 auto;
+    }
+
+    .item-card:not(:last-child) {
+        margin-bottom: 7rem;
+    }
+
+    .footer__container {
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+        .footer__form {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+//1 column in services for the small landscape
+@media (max-width: 40em) {
+    .services__list {
+        display: block;
+        max-width: 36rem;
+        margin: 0 auto;
+
+        & .item-about:not(:last-child) {
+            margin-bottom: 6rem;
+        }
+    }
+}
+
+//extra small
+@media (max-width: 35.94em) {
+    .header__container {
+        min-height: 56.8rem;
+    }
+
+    .nav-wrapper {
+        padding-bottom: 17rem;
+    }
+
+    .main-heading {
+        font-size: 3.8rem;
+        margin-bottom: 6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+
+        & .subtitle {
+            font-size: 3.2rem;
+        }
+    }
+
+
+    .title {
+        font-size: 2.7rem;
+    }
+
+
+    .title-line1 {
+        font-size: 2.8rem;
+    }
+
+    .title::after {
+        margin: 2.4rem auto 4.4rem auto;
+    }
+
+    .item-about {
+        padding-left: 7rem;
+    }
+
+    .item-about:nth-child(n)::before {
+        left: 1rem;
+    }
+
+    .team__text {
+        max-width: 90%;
+        text-align: left;
+    }
+
+    .footer__form {
+        justify-content: center;
+    }
+
+    .input__email {
+        border: 1px solid #e7e7e7;
+        margin-bottom: 1rem;
+    }
+
+    .input__submit {
+        height: 4.2rem;
+    }
+
+    .footer__text {
+        text-align: center;
+        ;
     }
 }
