@@ -37,6 +37,7 @@
             @include font($second-font, 1.5rem, 300);
             font-style: italic;
             line-height: 4.2rem;
+            color: #ccc;
         }
 
         &:focus::placeholder {
