@@ -1,6 +1,7 @@
 .header {
     color: #fff;
 
+
     & a {
         color: #fff;
     }
@@ -11,8 +12,6 @@
 }
 
 .header__overlay {
-    width: 100%;
-    height: 100%;
     @include gradient(to bottom, $background-top, $background-bottom);
 }
 
@@ -20,6 +19,11 @@
     padding-top: 2.4rem;
     min-height: 100rem;
     text-align: center;
+    position: relative;
+}
+
+.nav__burger {
+    display: none;
 }
 
 .nav-wrapper {
@@ -27,20 +31,32 @@
 }
 
 .navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+
+    position: relative;
+    z-index: 2;
+
+    & .nav__plate {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        position: relative;
+    }
+
 
     &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        align-items: center;
         text-transform: uppercase;
     }
 
-    &__list-item:not(:last-child) {
+    &__list-item {
         margin-right: 5.8rem;
+    }
+
+    &__list-item:last-child {
+        margin-right: 0;
+
     }
 
     &__list-link {
