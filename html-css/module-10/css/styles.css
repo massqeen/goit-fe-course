@@ -214,6 +214,10 @@ body {
   position: relative;
 }
 
+.nav-wrapper {
+  margin-bottom: 16.8rem;
+}
+
 .nav__burger {
   display: none;
 }
@@ -801,8 +805,8 @@ body {
 
 @media (min-width: 62em) and (max-width: 77.57em) {
   .team__list {
-    -webkit-column-gap: 1%;
-            column-gap: 1%;
+    -webkit-column-gap: 0.84%;
+            column-gap: 0.84%;
   }
 }
 
@@ -858,9 +862,10 @@ body {
 @media (max-width: 47.94em) {
   .header__container {
     padding: 0;
-  }
-  .header__container {
     min-height: 60rem;
+  }
+  .svg-top-button {
+    display: none;
   }
   .nav-wrapper {
     margin-bottom: 0;
