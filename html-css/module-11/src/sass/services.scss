@@ -1,0 +1,61 @@
+.services {
+    &__container {
+        padding: 4.6rem 1.9rem;
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 36rem));
+        gap: 9.6rem 4rem;
+        justify-content: center;
+    }
+}
+
+.item-about {
+    position: relative;
+    padding-left: 8rem;
+
+    &:nth-child(n)::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 2rem;
+        display: block;
+        width: 3.2rem;
+        height: 3.2rem;
+    }
+
+    &:nth-child(1)::before {
+        background: url(../images/icons/services/alarm-min.svg) center no-repeat;
+    }
+
+    &:nth-child(2)::before {
+        background: url(../images/icons/services/graph-min.svg) center no-repeat;
+    }
+
+    &:nth-child(3)::before {
+        background: url(../images/icons/services/PC-min.svg) center no-repeat;
+    }
+
+    &:nth-child(4)::before {
+        background: url(../images/icons/services/book-min.svg) center no-repeat;
+    }
+
+    &:nth-child(5)::before {
+        background: url(../images/icons/services/home-min.svg) center no-repeat;
+    }
+
+    &:nth-child(6)::before {
+        background: url(../images/icons/services/image-min.svg) center no-repeat;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        margin-bottom: 1.1rem;
+    }
+
+    &__text {
+        @extend %plain-text;
+        max-width: 28rem;
+    }
+}
